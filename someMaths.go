@@ -20,6 +20,6 @@ type Points struct {
 //расстояние между двумя точками и записывающую результат
 //вычислений во второй аргумент.
 func Dist(p Points, d *int) {
-	*d = int(math.Sqrt((math.Pow(float64(p.B.X-p.A.X), 2)) -
+	*d = int(math.Sqrt((math.Pow(float64(p.B.X-p.A.X), 2)) +
 		math.Pow(float64(p.B.Y-p.A.Y), 2)))
 }
